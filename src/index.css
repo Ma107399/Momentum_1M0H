@@ -1,0 +1,350 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  /* display: flex; */
+  /* place-items: center; */
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+/* NEW CHANGE – 27 Jan 2026 */
+/* Simple fade animation */
+
+/* ===================================================
+   NEW CHANGE – 27 Jan 2026
+   Welcome Screen Background + Glassmorphism
+=================================================== */
+
+.welcome-bg {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Animated gradient background */
+  background: linear-gradient(-45deg,
+      #0f2027,
+      #203a43,
+      #2c5364,
+      #1c1c1c);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Glass card */
+.welcome-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  border-radius: 20px;
+  padding: 3rem;
+  width: 100%;
+  max-width: 460px;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  color: #fff;
+}
+
+/* Improve input contrast on dark bg */
+.welcome-card input {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Reuse fade animation */
+.animate-fade {
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* ===================================================
+   NEW CHANGE – 27 Jan 2026
+   Empty State Styling
+=================================================== */
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  color: inherit;
+}
+
+.empty-icon {
+  font-size: 3rem;
+  margin-top: 1rem;
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+/* ===================================================
+   NEW CHANGE – 27 Jan 2026
+   Todo Item Styling + Completion Animation
+=================================================== */
+
+.todo-item {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 0.8rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: all 0.3s ease;
+}
+
+.todo-item:hover {
+  transform: translateY(-2px);
+}
+
+.todo-item.completed {
+  opacity: 0.6;
+}
+
+.todo-item.completed h5,
+.todo-item.completed p {
+  text-decoration: line-through;
+}
+
+.form-check-input {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+/* ===================================================
+   NEW CHANGE – 27 Jan 2026
+   Modern Todo Cards + Actions + AddTodo UI
+=================================================== */
+
+/* Todo Card */
+.todo-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.todo-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Completed state */
+.todo-card.completed {
+  opacity: 0.6;
+}
+
+.todo-card.completed h5,
+.todo-card.completed p {
+  text-decoration: line-through;
+}
+
+/* Checkbox */
+.todo-checkbox {
+  transform: scale(1.4);
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+/* Actions */
+.todo-actions {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.icon-btn:hover {
+  opacity: 1;
+}
+
+/* Add Todo Card */
+.addtodo-card {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 1.8rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* ===================================================
+   NEW CHANGE – 27 Jan 2026
+   Edit Mode Styling
+=================================================== */
+
+.edit-mode input,
+.edit-mode textarea {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* ===================================================
+   NEW CHANGE – 27 Jan 2026
+   Delete Animation
+=================================================== */
+
+.todo-card.deleting {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.3s ease;
+}
+
+/* ===================================================
+   NEW CHANGE – 27 Jan 2026
+   Task Sections
+=================================================== */
+
+h4 {
+  font-weight: 600;
+}
+
+/* ===================================================
+   NEW CHANGE – 27 Jan 2026
+   Header & Footer Styling
+=================================================== */
+
+.header-bar {
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nav-link {
+  opacity: 0.85;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  opacity: 1;
+}
+
+.footer-bar {
+  padding: 1rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 3rem;
+}
+
+/* ===================================================
+   NEW CHANGE – 27 Jan 2026
+   About Page Styling
+=================================================== */
+
+.about-card {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+}
+
+.about-list {
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+}
+
+.about-list li {
+  margin-bottom: 0.4rem;
+}
