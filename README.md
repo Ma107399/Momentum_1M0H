@@ -50,10 +50,7 @@ This project started as a learning exercise and gradually evolved into a polishe
 
 ## 📂 Project Structure
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 4a5664bd25be85024531b54608f8d9e8cfe851a0
 src/
 ├── Components/
 │ ├── Header.jsx
@@ -70,13 +67,12 @@ src/
 ├── App.css
 └── index.html
 
-<<<<<<< HEAD
-🧠 What I Learned From This Project
-
-=======
 
 🧠 What I Learned From This Project
->>>>>>> 4a5664bd25be85024531b54608f8d9e8cfe851a0
+
+
+🧠 What I Learned From This Project
+
 Building component-driven UIs with React
 
 Lifting state and managing data flow correctly
@@ -91,14 +87,12 @@ Structuring a project for GitHub and deployment
 
 Debugging real-world React issues
 
-<<<<<<< HEAD
+
 
 
 🔮 Future Improvements
 
-=======
-🔮 Future Improvements
->>>>>>> 4a5664bd25be85024531b54608f8d9e8cfe851a0
+
 🔐 Logout & switch user
 
 🌙 Dark / Light mode toggle
@@ -109,10 +103,9 @@ Debugging real-world React issues
 
 🔔 Notifications
 
-<<<<<<< HEAD
+
 ☁️ Backend integration (authentication & database)
-=======
+
 ☁️ Backend integration (authentication & database)
 
 
->>>>>>> 4a5664bd25be85024531b54608f8d9e8cfe851a0
