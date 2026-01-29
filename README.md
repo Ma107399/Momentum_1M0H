@@ -64,3 +64,34 @@ src/
 ├── index.css
 ├── App.css
 └── index.html
+
+
+🧠 What I Learned From This Project
+Building component-driven UIs with React
+
+Lifting state and managing data flow correctly
+
+Implementing inline editing and animations
+
+Designing meaningful empty states
+
+Improving UX beyond basic functionality
+
+Structuring a project for GitHub and deployment
+
+Debugging real-world React issues
+
+🔮 Future Improvements
+🔐 Logout & switch user
+
+🌙 Dark / Light mode toggle
+
+📊 Task progress indicators
+
+📅 Due dates & reminders
+
+🔔 Notifications
+
+☁️ Backend integration (authentication & database)
+
+
