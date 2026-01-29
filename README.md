@@ -1,7 +1,7 @@
 # 🚀 FocusFlow – Modern React Productivity App
 
 FocusFlow is a modern productivity application built with **React and Vite**, designed to go beyond a basic todo app by focusing on **user experience, clean UI, and real-world frontend patterns**.
-
+\
 This project started as a learning exercise and gradually evolved into a polished, deploy-ready application with animations, personalization, and scalable component architecture.
 
 ---
