@@ -1,111 +1,87 @@
-# 🚀 FocusFlow – Modern React Productivity App
+# 🚀 Task Management System (Full Stack)
 
-FocusFlow is a modern productivity application built with **React and Vite**, designed to go beyond a basic todo app by focusing on **user experience, clean UI, and real-world frontend patterns**.
-
-
-This project started as a learning exercise and gradually evolved into a polished, deploy-ready application with animations, personalization, and scalable component architecture.
+A full-stack task management system built with **React.js, ASP.NET Core, SQL Server, and JWT**, designed to demonstrate secure authentication, role-based access control, and scalable system architecture.
 
 ---
 
-## ✨ Features
+## 🌟 Overview
 
-- 👋 **Personalized Welcome Flow**
-  - Fake sign-in using a user name
-  - Data persisted with `localStorage`
+This project implements a **Role-Based Access Control (RBAC) system** with secure authentication and a modern frontend dashboard, simulating real-world enterprise application patterns.
 
-- 📝 **Full Task Management**
-  - Add, edit, delete tasks
-  - Inline editing
-  - Mark tasks as completed
+---
 
-- 🎯 **Smart Task Organization**
-  - Separate **Active** and **Completed** task sections
-  - Automatic movement between sections
+## ✨ Key Features
 
-- 🎨 **Modern UI & Animations**
-  - Animated gradient welcome screen
-  - Glassmorphism design
-  - Smooth add / edit / delete animations
-  - Card-based layout
+- 🔐 **Secure Authentication**
+  - JWT-based authentication for user sessions
+  - Token-based access control
 
-- 💾 **Persistent State**
-  - Tasks and user data saved locally
-  - Data remains after page refresh
+- 🛡️ **Role-Based Access Control (RBAC)**
+  - Dynamic roles and permissions
+  - Controlled access to system resources
 
-- 📱 **Responsive Design**
-  - Optimized for desktop and mobile screens
+- ⚙️ **Backend APIs**
+  - Built using **ASP.NET Core Web API**
+  - Scalable and modular architecture
+  - Handles user, role, and permission management
+
+- 🗄️ **Database Design**
+  - Optimized **SQL Server schema**
+  - Efficient role-permission mapping
+
+- 🖥️ **Admin Dashboard**
+  - Built with **React.js**
+  - Real-time user, role, and access management
+  - Clean and responsive UI
 
 ---
 
 ## 🛠 Tech Stack
 
-- **React** (Functional Components & Hooks)
-- **Vite** (Fast development & build tool)
-- **React Router**
-- **Bootstrap 5**
-- **Custom CSS animations**
-- **LocalStorage**
+### Frontend
+- React.js
+- JavaScript (ES6+)
+- CSS / Bootstrap
+
+### Backend
+- ASP.NET Core Web API
+- REST APIs
+- JWT Authentication
+
+### Database
+- SQL Server
 
 ---
 
-## 📂 Project Structure
+## 🏗 System Design Highlights
 
+- Separation of concerns between frontend and backend  
+- Secure API communication using JWT tokens  
+- Role-permission mapping for fine-grained access control  
+- Scalable architecture aligned with enterprise patterns  
 
-src/
-├── Components/
-│ ├── Header.jsx
-│ ├── Footer.jsx
-│ ├── Welcome.jsx
-│ ├── AddTodo.jsx
-│ ├── Todos.jsx
-│ ├── TodoItems.jsx
-│ ├── EmptyState.jsx
-│ └── About.jsx
-├── App.jsx
-├── main.jsx
-├── index.css
-├── App.css
-└── index.html
+---
 
+## 📌 Core Functional Flow
 
-🧠 What I Learned From This Project
+1. User logs in → JWT token generated  
+2. Token used for authenticated API requests  
+3. Backend validates role and permissions  
+4. UI updates dynamically based on access level  
 
+---
 
-🧠 What I Learned From This Project
+## 🚧 Future Enhancements
 
-Building component-driven UIs with React
+- 🔐 Refresh tokens & advanced auth flows  
+- 📊 Audit logs & activity tracking  
+- ☁️ Deployment on cloud (Azure / AWS)  
+- 📈 Performance monitoring  
 
-Lifting state and managing data flow correctly
+---
 
-Implementing inline editing and animations
+## 💡 Note
 
-Designing meaningful empty states
+This project demonstrates practical experience in building **full-stack applications with secure authentication, RBAC, and scalable backend architecture** using modern technologies.
 
-Improving UX beyond basic functionality
-
-Structuring a project for GitHub and deployment
-
-Debugging real-world React issues
-
-
-
-
-🔮 Future Improvements
-
-
-🔐 Logout & switch user
-
-🌙 Dark / Light mode toggle
-
-📊 Task progress indicators
-
-📅 Due dates & reminders
-
-🔔 Notifications
-
-
-☁️ Backend integration (authentication & database)
-
-☁️ Backend integration (authentication & database)
-
-
+---
